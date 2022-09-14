@@ -653,7 +653,7 @@ namespace NorenRestApiWrapper
         public string ti;
         public string ls;
         public string cstFrm;
-        public string fldttm;
+        public string fltm;
         public string flid;
         public string flleg;
         public string flqty;
@@ -661,6 +661,7 @@ namespace NorenRestApiWrapper
         public string ordersource;
         public string token;
         public string request_time;
+	public string exch_tm;
     }
     public class ExchMsg : NorenMessage
     {

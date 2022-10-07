@@ -2,12 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.3.0</Version>
+    <Version>1.4.0</Version>
     <Company>Kambala Solutions Pvt Ltd</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Description>12-08-2022
-- interval fix in TP series
-</Description>
+    <Description>06-10-2022
+- responses with list stat is returned now</Description>
   </PropertyGroup>
 
   <ItemGroup>

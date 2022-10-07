@@ -61,13 +61,16 @@ namespace NorenRestApiWrapper
                     { 
                         //json lists begin with [
                         Message.list = JsonConvert.DeserializeObject<List<U>>(data);
+                        Message.stat = "Ok";
+                        Message.request_time = "";
+                        Message.emsg = "";
                     }
                     else
                     {
                         //error messages
                         NorenResponseMsg msg = GetNorenMessage(data);
-                        Message.Copy(msg);                        
-                        
+                        Message.Copy(msg);
+                        Message.stat = "Not_Ok";
                         ResponseHandler(Message, false);
                         return;
                     }
